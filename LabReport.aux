@@ -16,6 +16,7 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand*\HyPL@Entry[1]{}
 \HyPL@Entry{0<</S/D>>}
+\providecommand\tcolorbox@label[2]{}
 \HyPL@Entry{1<</S/D>>}
 \HyPL@Entry{2<</S/D>>}
 \HyPL@Entry{3<</S/D>>}
@@ -30,31 +31,55 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces 雷达系统网络设计\relax }}{2}{figure.caption.3}}
 \newlabel{RadarNet}{{1.2}{2}{雷达系统网络设计\relax }{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.3}网络划分}{3}{section.1.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}网络安全}{4}{chapter.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {1.1}{\ignorespaces VPN专网IP地址划分\relax }}{3}{table.caption.4}}
+\newlabel{tab:IPaddress}{{1.1}{3}{VPN专网IP地址划分\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}技术方案}{4}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}工具软件}{5}{chapter.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}VPN比较}{4}{section.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces VPN协议对比(1)\relax }}{4}{figure.caption.5}}
+\newlabel{VPNCompare}{{2.1}{4}{VPN协议对比(1)\relax }{figure.caption.5}{}}
+\citation{OpenVPN.web}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces VPN协议对比(2)\relax }}{5}{figure.caption.6}}
+\newlabel{VPNCompare_01}{{2.2}{5}{VPN协议对比(2)\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}OpenVPN介绍}{5}{section.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces OpenVPN原理\relax }}{5}{figure.caption.7}}
+\newlabel{VPNPrince}{{2.3}{5}{OpenVPN原理\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}网络安全}{7}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}配置步骤}{6}{chapter.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}OpenVPN安全策略}{7}{section.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Firewall策略}{7}{section.3.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Firewall策略\relax }}{8}{table.caption.8}}
+\newlabel{tab:FirewallPolicy }{{3.1}{8}{Firewall策略\relax }{table.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 防火墙策略区域\relax }}{8}{figure.caption.9}}
+\newlabel{RadarPrivilege}{{3.1}{8}{防火墙策略区域\relax }{figure.caption.9}{}}
+\citation{easy-rsa.web}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}配置步骤}{9}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}实验目的}{6}{section.4.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}实验工具}{6}{section.4.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}实验设计}{6}{section.4.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}数据分析}{6}{section.4.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 报文数据流量\relax }}{7}{figure.caption.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}实验结论}{7}{section.4.5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}实验总结}{8}{chapter.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}OpenVPN安装}{9}{section.4.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}OpenVPN配置}{9}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}密钥配置}{9}{subsection.4.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces vars文件修改\relax }}{10}{figure.caption.10}}
+\newlabel{vars_01}{{4.1}{10}{vars文件修改\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces 创建根证书\relax }}{10}{figure.caption.11}}
+\newlabel{build-ca}{{4.2}{10}{创建根证书\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces 创建服务器端证书\relax }}{11}{figure.caption.12}}
+\newlabel{server-ca}{{4.3}{11}{创建服务器端证书\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces 签约服务器端证书\relax }}{11}{figure.caption.13}}
+\newlabel{sign-server-ca}{{4.4}{11}{签约服务器端证书\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces 创建Diffie-Hellman\relax }}{12}{figure.caption.14}}
+\newlabel{gen-dh}{{4.5}{12}{创建Diffie-Hellman\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces 创建客户端证书\relax }}{12}{figure.caption.15}}
+\newlabel{client-ca}{{4.6}{12}{创建客户端证书\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces 签约客户端证书\relax }}{13}{figure.caption.16}}
+\newlabel{sign-client-ca}{{4.7}{13}{签约客户端证书\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}网络配置}{14}{subsection.4.2.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}总结}{16}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{参考文献}{8}{chapter.5}}
-\bibcite{NS3.web}{1}
-\bibcite{rfc3626.olsr}{2}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}数据表}{10}{appendix.A}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}程序代码}{11}{appendix.B}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{参考文献}{16}{chapter.5}}
+\bibcite{OpenVPN.web}{1}
+\bibcite{easy-rsa.web}{2}
 \ttl@finishall
