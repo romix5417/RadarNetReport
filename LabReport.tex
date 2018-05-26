@@ -125,6 +125,8 @@
 	
 	{\makebox[4\ccwd][s]{编\qquad 制：}}& ~\kaishu 罗敏 \\ 
 
+	{\makebox[4\ccwd][s]{版\qquad 本：}}& ~\kaishu 1.0 \\
+
 \end{tabular}
  }\\[2cm]
 \vspace{\fill}
@@ -253,7 +255,7 @@
 \end{itemize}
 
 清晰的编址可以有效的定位设备、判断问题，是雷达系统网络设备管理的基础,后续根据讨论之后可
-以根据讨论之后加入新的编址原则以便更好的管理雷达系统网络。
+以加入新的编址原则以便更好的管理雷达系统网络。
 
 
 \end{spacing}
@@ -530,7 +532,7 @@ cp /root/client/easy-rsa/easyrsa3/pki/private/Ops.key /root/client/
 
 \subsection{网络配置}
 本节主要介绍OpenVPN的一些基本网络配置，如下所示，列出了服务端server.conf文件的一些基本
-配置，可以看到端口被配置成了2194，使用的通行模式是upd，配置的OpenVPN服务器网段为
+配置，可以看到端口被配置成了5094，使用的通行模式是udp，配置的OpenVPN服务器网段为
 172.16.10.0/24，相应的还配置了之前生成的密钥文件。
 
 \begin{tcolorbox}[notitle,boxrule=0pt,colback=gray!20,colframe=gray!20]
